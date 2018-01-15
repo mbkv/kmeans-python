@@ -12,5 +12,7 @@ So far, I've made it as optimized to run in under 3 seconds on my laptop for k=3
 ```bash
 main.py [-h] [-o file] [-k K] [--all] file
 ```
--o is the output file to use, -k is the value k to use. --all is to run all k values between 1 and 16, and powers of 2 between 16-256
+* -o: Output file
+* -k: Value K
+* --all: Run all k values between 1 and 16, and powers of 2 between 16-256
 
