@@ -1,6 +1,8 @@
 # kmeans-python
 Kmeans on images in Python
 
+![Original](https://raw.githubusercontent.com/mbitokhov/kmeans-python/master/pictures/test.jpg) ![k=4](https://raw.githubusercontent.com/mbitokhov/kmeans-python/master/pictures/test_4.jpg)
+
 Ever since I saw [this](https://www.youtube.com/watch?v=yR7k19YBqiw) Computerphile video, I've been interested in seeing what images I can create with k-means clustering
 
 I've tried to make the code as optimized as I could, because as I found out, one line of code can make the difference between a program never finishing and finishing in seconds
