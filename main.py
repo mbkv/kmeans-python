@@ -4,6 +4,7 @@ from PIL import Image
 import numpy as np
 import scipy.cluster as cluster
 import argparse
+import time
 
 def run_kmeans(i,k_count):
     i = np.copy(i)
@@ -23,8 +24,15 @@ def get_new_filename(filename, k):
     return ".".join(filename)
 
 def run_once(i_arr, output, k_count):
+    start = time.clock()
+
     values = run_kmeans(i_arr, k_count)
+
+    kmeans = time.clock()
+    print("{:.2f} seconds calculating".format(kmeans - start))
+
     Image.fromarray(values).save(output)
+    print("{:.2f} seconds to save".format(time.clock() - kmeans))
 
 def run_all(i_arr, output):
     for k_count in range(1,16):
